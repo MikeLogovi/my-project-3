@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
     lua-zlib-dev \
     libmemcached-dev \
     nginx
-
+    
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 # Install supervisor
 RUN apt-get install -y supervisor
 
